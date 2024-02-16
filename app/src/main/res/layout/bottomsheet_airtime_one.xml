@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="airtimeOneVM" type="com.litepayapp.app.modules.airtimeone.data.viewmodel.AirtimeOneVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearAirtimeOne"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" android:orientation="vertical">
+        <LinearLayout android:gravity="center_horizontal"
+            android:id="@+id/linearColumnvtu"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylewhite_2">
+            <androidx.appcompat.widget.AppCompatButton
+                android:ellipsize="end" android:gravity="center"
+                android:id="@+id/btnVtu"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_20pxh"
+                android:layout_marginStart="@dimen/_20pxh"
+                android:layout_marginTop="@dimen/_52pxv"
+                android:layout_width="match_parent"
+                android:paddingBottom="@dimen/_10pxv"
+                android:paddingEnd="@dimen/_30pxh"
+                android:paddingStart="@dimen/_30pxh"
+                android:paddingTop="@dimen/_10pxv"
+                android:singleLine="true" android:text="@string/lbl_vtu"
+                android:textAllCaps="false"
+                style="@style/btnRoundedOutline_3" tools:text="@string/lbl_vtu"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:ellipsize="end" android:gravity="center"
+                android:id="@+id/btnShareAndSell"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_20pxh"
+                android:layout_marginVertical="@dimen/_20pxv"
+                android:layout_width="match_parent"
+                android:paddingBottom="@dimen/_10pxv"
+                android:paddingEnd="@dimen/_30pxh"
+                android:paddingStart="@dimen/_30pxh"
+                android:paddingTop="@dimen/_10pxv"
+                android:singleLine="true"
+                android:text="@string/lbl_share_and_sell"
+                android:textAllCaps="false"
+                style="@style/btnRoundedOutline_3" tools:text="@string/lbl_share_and_sell"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

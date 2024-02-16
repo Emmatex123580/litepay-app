@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="dataOneVM" type="com.litepayapp.app.modules.dataone.data.viewmodel.DataOneVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearDataOne"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" android:orientation="vertical">
+        <LinearLayout android:gravity="center_horizontal"
+            android:id="@+id/linearColumnsme"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylewhite_2">
+            <androidx.appcompat.widget.AppCompatButton
+                android:ellipsize="end" android:gravity="center"
+                android:id="@+id/btnSme"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_20pxh"
+                android:layout_marginStart="@dimen/_20pxh"
+                android:layout_marginTop="@dimen/_37pxv"
+                android:layout_width="match_parent"
+                android:paddingBottom="@dimen/_10pxv"
+                android:paddingEnd="@dimen/_30pxh"
+                android:paddingStart="@dimen/_30pxh"
+                android:paddingTop="@dimen/_10pxv"
+                android:singleLine="true" android:text="@string/lbl_sme"
+                android:textAllCaps="false"
+                style="@style/btnRoundedOutline_3" tools:text="@string/lbl_sme"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:ellipsize="end" android:gravity="center"
+                android:id="@+id/btnCorporate"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_20pxh"
+                android:layout_marginStart="@dimen/_20pxh"
+                android:layout_marginTop="@dimen/_20pxv"
+                android:layout_width="match_parent"
+                android:paddingBottom="@dimen/_10pxv"
+                android:paddingEnd="@dimen/_30pxh"
+                android:paddingStart="@dimen/_30pxh"
+                android:paddingTop="@dimen/_10pxv"
+                android:singleLine="true"
+                android:text="@string/lbl_corporate"
+                android:textAllCaps="false"
+                style="@style/btnRoundedOutline_3" tools:text="@string/lbl_corporate"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:ellipsize="end" android:gravity="center"
+                android:id="@+id/btnGifting"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_28pxv"
+                android:layout_marginEnd="@dimen/_20pxh"
+                android:layout_marginStart="@dimen/_20pxh"
+                android:layout_marginTop="@dimen/_20pxv"
+                android:layout_width="match_parent"
+                android:paddingBottom="@dimen/_10pxv"
+                android:paddingEnd="@dimen/_30pxh"
+                android:paddingStart="@dimen/_30pxh"
+                android:paddingTop="@dimen/_10pxv"
+                android:singleLine="true"
+                android:text="@string/lbl_gifting"
+                android:textAllCaps="false"
+                style="@style/btnRoundedOutline_3" tools:text="@string/lbl_gifting"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="educationPinEightVM" type="com.litepayapp.app.modules.educationpineight.data.viewmodel.EducationPinEightVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearColumnrectangle143"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearColumnarrowleft"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_19pxh"
+            android:layout_marginStart="@dimen/_21pxh"
+            android:layout_marginTop="@dimen/_23pxv"
+            android:layout_width="match_parent" android:orientation="vertical">
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbarToolbar"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginStart="@dimen/_4pxh"
+                android:layout_width="match_parent" app:contentInsetStart="0dp">
+                <LinearLayout android:gravity="start"
+                    android:id="@+id/linearRowarrowleft"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent" android:orientation="horizontal">
+                    <ImageView android:id="@+id/imageArrowleft"
+                        android:layout_height="@dimen/_14pxh"
+                        android:layout_marginBottom="@dimen/_4pxv"
+                        android:layout_marginTop="@dimen/_2pxv"
+                        android:layout_width="@dimen/_14pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_arrowleft_bluegray_900_14x14"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_arrowleft_bluegray_900_14x14"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtLanguage"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_72pxh"
+                        android:layout_weight="0.91"
+                        android:layout_width="0dp"
+                        android:singleLine="true"
+                        android:text="@{educationPinEightVM.educationPinEightModel.txtLanguage}"
+                        style="@style/txtPoppinsmedium14" tools:text="@string/msg_result_checker"/>
+                </LinearLayout>
+            </androidx.appcompat.widget.Toolbar>
+            <Spinner
+                android:background="@drawable/layer_list_border_purple_a200_radius_5"
+                android:id="@+id/spinnerFrame627042"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_65pxv"
+                android:layout_width="match_parent" tools:listitem="@layout/spinner_item"/>
+            <LinearLayout android:gravity="center_horizontal"
+                android:id="@+id/linearColumnselectnetwork"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_33pxv"
+                android:layout_width="match_parent"
+                android:orientation="vertical" style="@style/groupStylecornerRadius_2">
+                <TextView android:ellipsize="end"
+                    android:gravity="start"
+                    android:id="@+id/txtSelectNetwork"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/_11pxv"
+                    android:layout_marginEnd="@dimen/_12pxh"
+                    android:layout_marginStart="@dimen/_12pxh"
+                    android:layout_marginTop="@dimen/_12pxv"
+                    android:layout_width="match_parent"
+                    android:singleLine="true"
+                    android:text="@{educationPinEightVM.educationPinEightModel.txtSelectNetwork}"
+                    style="@style/txtPoppinsregular12_4" tools:text="@string/lbl_quantity"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal"
+                android:id="@+id/linearColumnmtn"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_32pxv"
+                android:layout_width="match_parent"
+                android:orientation="vertical" style="@style/groupStylepurple_3">
+                <TextView android:ellipsize="end"
+                    android:gravity="center_horizontal"
+                    android:id="@+id/txtMTN"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/_10pxv"
+                    android:layout_marginEnd="@dimen/_114pxh"
+                    android:layout_marginStart="@dimen/_114pxh"
+                    android:layout_marginTop="@dimen/_9pxv"
+                    android:layout_width="match_parent"
+                    android:singleLine="true"
+                    android:text="@{educationPinEightVM.educationPinEightModel.txtMTN}"
+                    style="@style/txtPoppinssemibold14" tools:text="@string/lbl_generate_pin"/>
+            </LinearLayout>
+        </LinearLayout>
+        <ScrollView android:clipToPadding="false"
+            android:fillViewport="true" android:gravity="start"
+            android:id="@+id/scrollViewScrollview"
+            android:layout_height="0dp" android:layout_weight="1" android:layout_width="match_parent">
+            <FrameLayout android:id="@+id/frameEducationpinE"
+                android:layout_height="match_parent" android:layout_width="match_parent">
+                <LinearLayout android:id="@+id/linearRowhome"
+                    android:layout_gravity="bottom|start"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_7pxv"
+                    android:layout_marginTop="@dimen/_10pxv"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal" style="@style/groupStylewhite_1">
+                    <LinearLayout android:gravity="center_horizontal"
+                        android:id="@+id/linearColumnhome"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_11pxv"
+                        android:layout_marginStart="@dimen/_20pxh"
+                        android:layout_marginTop="@dimen/_14pxv"
+                        android:layout_weight="0.28"
+                        android:layout_width="0dp" android:orientation="vertical">
+                        <ImageView android:id="@+id/imageHome"
+                            android:layout_gravity="start"
+                            android:layout_height="@dimen/_10pxh"
+                            android:layout_marginEnd="@dimen/_10pxh"
+                            android:layout_marginStart="@dimen/_10pxh"
+                            android:layout_width="@dimen/_9pxh"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/img_home"
+                            tools:ignore="ContentDescription" tools:src="@drawable/img_home"/>
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtHomeOne"
+                            android:layout_gravity="start"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_10pxh"
+                            android:layout_marginTop="@dimen/_6pxv"
+                            android:layout_width="wrap_content"
+                            android:singleLine="true"
+                            android:text="@{educationPinEightVM.educationPinEightModel.txtHomeOne}"
+                            style="@style/txtPoppinsregular10_1" tools:text="@string/lbl_home"/>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_horizontal"
+                        android:id="@+id/linearColumnsort"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:layout_marginTop="@dimen/_14pxv"
+                        android:layout_weight="0.29"
+                        android:layout_width="0dp" android:orientation="vertical">
+                        <ImageView android:id="@+id/imageSort"
+                            android:layout_gravity="start"
+                            android:layout_height="@dimen/_14pxh"
+                            android:layout_marginEnd="@dimen/_10pxh"
+                            android:layout_marginStart="@dimen/_10pxh"
+                            android:layout_width="@dimen/_14pxh"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/img_sort"
+                            tools:ignore="ContentDescription" tools:src="@drawable/img_sort"/>
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtPricing"
+                            android:layout_gravity="start"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_10pxh"
+                            android:layout_marginTop="@dimen/_5pxv"
+                            android:layout_width="wrap_content"
+                            android:singleLine="true"
+                            android:text="@{educationPinEightVM.educationPinEightModel.txtPricing}"
+                            style="@style/txtPoppinsregular10" tools:text="@string/lbl_pricing"/>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_horizontal"
+                        android:id="@+id/linearColumnmaximize"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_12pxv"
+                        android:layout_marginTop="@dimen/_13pxv"
+                        android:layout_weight="0.33"
+                        android:layout_width="0dp" android:orientation="vertical">
+                        <ImageView android:id="@+id/imageMaximize"
+                            android:layout_gravity="start"
+                            android:layout_height="@dimen/_12pxh"
+                            android:layout_marginEnd="@dimen/_15pxh"
+                            android:layout_marginStart="@dimen/_15pxh"
+                            android:layout_width="@dimen/_13pxh"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/img_maximize"
+                            tools:ignore="ContentDescription" tools:src="@drawable/img_maximize"/>
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtReferrals"
+                            android:layout_gravity="start"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_10pxh"
+                            android:layout_marginTop="@dimen/_5pxv"
+                            android:layout_width="wrap_content"
+                            android:singleLine="true"
+                            android:text="@{educationPinEightVM.educationPinEightModel.txtReferrals}"
+                            style="@style/txtPoppinsregular10" tools:text="@string/lbl_referrals"/>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_horizontal"
+                        android:id="@+id/linearColumnlock"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_12pxv"
+                        android:layout_marginEnd="@dimen/_20pxh"
+                        android:layout_marginTop="@dimen/_13pxv"
+                        android:layout_weight="0.1"
+                        android:layout_width="0dp" android:orientation="vertical">
+                        <ImageView android:id="@+id/imageLock"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_height="@dimen/_13pxh"
+                            android:layout_marginEnd="@dimen/_8pxh"
+                            android:layout_marginStart="@dimen/_8pxh"
+                            android:layout_width="@dimen/_13pxh"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/img_lock"
+                            tools:ignore="ContentDescription" tools:src="@drawable/img_lock"/>
+                        <TextView android:ellipsize="end"
+                            android:gravity="start"
+                            android:id="@+id/txtProfile"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5pxv"
+                            android:layout_width="match_parent"
+                            android:singleLine="true"
+                            android:text="@{educationPinEightVM.educationPinEightModel.txtProfile}"
+                            style="@style/txtPoppinsregular10" tools:text="@string/lbl_profile"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <View android:background="@color/bluegray_900_90"
+                    android:id="@+id/viewRectangle143"
+                    android:layout_gravity="start"
+                    android:layout_height="@dimen/_756pxh"
+                    android:layout_marginBottom="@dimen/_7pxv" android:layout_width="@dimen/_360pxh"/>
+                <LinearLayout android:id="@+id/linearColumnselectexam"
+                    android:layout_gravity="bottom|start"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10pxv"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStylewhite_2">
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtSelectExam"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_20pxh"
+                        android:layout_marginStart="@dimen/_20pxh"
+                        android:layout_marginTop="@dimen/_3pxv"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        android:text="@{educationPinEightVM.educationPinEightModel.txtSelectExam}"
+                        style="@style/txtPoppinsregular14_2" tools:text="@string/lbl_select_exam"/>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:ellipsize="end" android:gravity="center"
+                        android:id="@+id/btnWaec"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_20pxh"
+                        android:layout_marginStart="@dimen/_20pxh"
+                        android:layout_marginTop="@dimen/_12pxv"
+                        android:layout_width="match_parent"
+                        android:paddingBottom="@dimen/_10pxv"
+                        android:paddingEnd="@dimen/_30pxh"
+                        android:paddingStart="@dimen/_30pxh"
+                        android:paddingTop="@dimen/_10pxv"
+                        android:singleLine="true"
+                        android:text="@string/lbl_waec"
+                        android:textAllCaps="false"
+                        style="@style/btnRoundedOutline_3" tools:text="@string/lbl_waec"/>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:ellipsize="end" android:gravity="center"
+                        android:id="@+id/btnNeco"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_20pxh"
+                        android:layout_marginStart="@dimen/_20pxh"
+                        android:layout_marginTop="@dimen/_20pxv"
+                        android:layout_width="match_parent"
+                        android:paddingBottom="@dimen/_10pxv"
+                        android:paddingEnd="@dimen/_30pxh"
+                        android:paddingStart="@dimen/_30pxh"
+                        android:paddingTop="@dimen/_10pxv"
+                        android:singleLine="true"
+                        android:text="@string/lbl_neco"
+                        android:textAllCaps="false"
+                        style="@style/btnRoundedOutline_3" tools:text="@string/lbl_neco"/>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:ellipsize="end" android:gravity="center"
+                        android:id="@+id/btnNabteb"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_38pxv"
+                        android:layout_marginEnd="@dimen/_20pxh"
+                        android:layout_marginStart="@dimen/_20pxh"
+                        android:layout_marginTop="@dimen/_20pxv"
+                        android:layout_width="match_parent"
+                        android:paddingBottom="@dimen/_10pxv"
+                        android:paddingEnd="@dimen/_30pxh"
+                        android:paddingStart="@dimen/_30pxh"
+                        android:paddingTop="@dimen/_10pxv"
+                        android:singleLine="true"
+                        android:text="@string/lbl_nabteb"
+                        android:textAllCaps="false"
+                        style="@style/btnRoundedOutline_3" tools:text="@string/lbl_nabteb"/>
+                </LinearLayout>
+            </FrameLayout>
+        </ScrollView>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="upgradeTwoRowModel" type="com.litepayapp.app.modules.upgradetwo.data.model.UpgradeTwoRowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearRowarrowright"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:orientation="horizontal">
+        <ImageButton
+            android:background="@drawable/rectangle_bg_purple_100_radius_5"
+            android:id="@+id/btnArrowright"
+            android:layout_height="@dimen/_44pxh"
+            android:layout_width="@dimen/_44pxh"
+            android:paddingHorizontal="@dimen/_15pxh"
+            android:paddingVertical="@dimen/_15pxv"
+            android:scaleType="fitCenter"
+            android:src="@drawable/img_arrowright" tools:ignore="ContentDescription"/>
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearColumnupgrade"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_4pxv"
+            android:layout_marginStart="@dimen/_24pxh"
+            android:layout_marginTop="@dimen/_6pxv"
+            android:layout_weight="0.78" android:layout_width="0dp" android:orientation="vertical">
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtUpgrade"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{upgradeTwoRowModel.txtUpgrade}"
+                style="@style/txtPoppinsbold12_1" tools:text="@string/lbl_upgrade"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtUpgradetoAffi"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{upgradeTwoRowModel.txtUpgradetoAffi}"
+                style="@style/txtPoppinsregular10" tools:text="@string/msg_upgrade_to_affi"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

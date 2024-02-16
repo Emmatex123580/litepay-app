@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="selectCableOneVM" type="com.litepayapp.app.modules.selectcableone.data.viewmodel.SelectCableOneVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearSelectcableOn"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" android:orientation="vertical">
+        <LinearLayout android:gravity="center_horizontal"
+            android:id="@+id/linearColumnselectcablepr"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylewhite_2">
+            <LinearLayout android:id="@+id/linearRowselectcablepr"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_20pxh"
+                android:layout_marginStart="@dimen/_20pxh"
+                android:layout_marginTop="@dimen/_20pxv"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtSelectcablepr"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.9"
+                    android:layout_width="0dp" android:singleLine="true"
+                    android:text="@{selectCableOneVM.selectCableOneModel.txtSelectcablepr}"
+                    style="@style/txtPoppinsregular16_3" tools:text="@string/msg_select_cable_pr"/>
+                <ImageView android:id="@+id/imageClose"
+                    android:layout_height="@dimen/_18pxh"
+                    android:layout_marginBottom="@dimen/_4pxv"
+                    android:layout_marginStart="@dimen/_132pxh"
+                    android:layout_marginTop="@dimen/_1pxv"
+                    android:layout_width="@dimen/_18pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_close_red_a700"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_close_red_a700"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearRowmtn"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_20pxh"
+                android:layout_marginStart="@dimen/_20pxh"
+                android:layout_marginTop="@dimen/_21pxv"
+                android:layout_width="match_parent"
+                android:orientation="horizontal" style="@style/groupStylecornerRadius_4">
+                <ImageView android:id="@+id/imageImageThirteen"
+                    android:layout_height="@dimen/_32pxh"
+                    android:layout_marginBottom="@dimen/_6pxv"
+                    android:layout_marginStart="@dimen/_24pxh"
+                    android:layout_marginTop="@dimen/_6pxv"
+                    android:layout_width="@dimen/_32pxh"
+                    android:scaleType="centerCrop" circular="@{true}"
+                    imageRes="@{@drawable/img_image13}"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_image13"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtMTN"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_9pxv"
+                    android:layout_marginEnd="@dimen/_137pxh"
+                    android:layout_marginStart="@dimen/_81pxh"
+                    android:layout_marginTop="@dimen/_10pxv"
+                    android:layout_weight="0.59"
+                    android:layout_width="0dp" android:singleLine="true"
+                    android:text="@{selectCableOneVM.selectCableOneModel.txtMTN}"
+                    style="@style/txtPoppinssemibold16" tools:text="@string/lbl_gotv"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearRowmtnOne"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_20pxh"
+                android:layout_marginStart="@dimen/_20pxh"
+                android:layout_marginTop="@dimen/_20pxv"
+                android:layout_width="match_parent"
+                android:orientation="horizontal" style="@style/groupStylecornerRadius_4">
+                <ImageView android:id="@+id/imageImageFifteen"
+                    android:layout_height="@dimen/_31pxh"
+                    android:layout_marginBottom="@dimen/_6pxv"
+                    android:layout_marginStart="@dimen/_24pxh"
+                    android:layout_marginTop="@dimen/_6pxv"
+                    android:layout_width="@dimen/_40pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_image15"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_image15"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtMTNOne"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_9pxv"
+                    android:layout_marginEnd="@dimen/_116pxh"
+                    android:layout_marginStart="@dimen/_52pxh"
+                    android:layout_marginTop="@dimen/_10pxv"
+                    android:layout_weight="0.69"
+                    android:layout_width="0dp" android:singleLine="true"
+                    android:text="@{selectCableOneVM.selectCableOneModel.txtMTNOne}"
+                    style="@style/txtPoppinssemibold16" tools:text="@string/lbl_startimes"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearRowmtnTwo"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_27pxv"
+                android:layout_marginEnd="@dimen/_20pxh"
+                android:layout_marginStart="@dimen/_20pxh"
+                android:layout_marginTop="@dimen/_20pxv"
+                android:layout_width="match_parent"
+                android:orientation="horizontal" style="@style/groupStylecornerRadius_4">
+                <ImageView android:id="@+id/imageImageFourteen"
+                    android:layout_height="@dimen/_17pxh"
+                    android:layout_marginBottom="@dimen/_7pxv"
+                    android:layout_marginStart="@dimen/_24pxh"
+                    android:layout_marginTop="@dimen/_19pxv"
+                    android:layout_width="@dimen/_40pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_image14"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_image14"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtMTNTwo"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_9pxv"
+                    android:layout_marginEnd="@dimen/_139pxh"
+                    android:layout_marginStart="@dimen/_75pxh"
+                    android:layout_marginTop="@dimen/_10pxv"
+                    android:layout_weight="0.51"
+                    android:layout_width="0dp" android:singleLine="true"
+                    android:text="@{selectCableOneVM.selectCableOneModel.txtMTNTwo}"
+                    style="@style/txtPoppinssemibold16" tools:text="@string/lbl_dstv"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

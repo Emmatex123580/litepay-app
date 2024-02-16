@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="signUpThreeRowModel" type="com.litepayapp.app.modules.signupthree.data.model.SignUpThreeRowModel"/>
+    </data>
+    <FrameLayout android:id="@+id/frameStackframe626990One"
+        android:layout_height="wrap_content" android:layout_width="match_parent">
+        <View
+            android:background="@drawable/rectangle_border_bluegray_900_radius_5"
+            android:id="@+id/viewFrame626990One"
+            android:layout_gravity="bottom|start"
+            android:layout_height="@dimen/_33pxv"
+            android:layout_marginTop="@dimen/_10pxv" android:layout_width="@dimen/_320pxh"/>
+        <View android:background="@color/white_A700"
+            android:id="@+id/viewRectangle138"
+            android:layout_gravity="top|start"
+            android:layout_height="@dimen/_19pxv"
+            android:layout_marginBottom="@dimen/_10pxv"
+            android:layout_marginEnd="@dimen/_13pxh"
+            android:layout_marginStart="@dimen/_13pxh"
+            android:layout_marginTop="@dimen/_1pxv" android:layout_width="@dimen/_69pxh"/>
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtUsernameOne"
+            android:layout_gravity="top|start"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_10pxv"
+            android:layout_marginEnd="@dimen/_16pxh"
+            android:layout_marginStart="@dimen/_16pxh"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:text="@{signUpThreeRowModel.txtUsernameOne}"
+            style="@style/txtPoppinsregular12" tools:text="@string/lbl_username"/>
+    </FrameLayout>
+</layout>

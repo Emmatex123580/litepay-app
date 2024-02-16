@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="topuserVM" type="com.litepayapp.app.modules.topuser.data.viewmodel.TopuserVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearTopuser"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" android:orientation="vertical">
+        <LinearLayout android:id="@+id/linearColumndearnkky"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/_300pxv"
+            android:layout_marginEnd="@dimen/_30pxh"
+            android:layout_marginStart="@dimen/_30pxh"
+            android:layout_marginTop="@dimen/_256pxv"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylewhite_4">
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtDearNkky"
+                android:layout_gravity="start"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_49pxh"
+                android:layout_marginStart="@dimen/_49pxh"
+                android:layout_marginTop="@dimen/_24pxv"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{topuserVM.topuserModel.txtDearNkky}"
+                style="@style/txtPoppinsbold14_1" tools:text="@string/lbl_dear_nkky"/>
+            <TextView android:gravity="center_horizontal"
+                android:id="@+id/txtLanguage"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_39pxh"
+                android:layout_marginStart="@dimen/_39pxh"
+                android:layout_marginTop="@dimen/_4pxv"
+                android:layout_width="match_parent"
+                android:text="@{topuserVM.topuserModel.txtLanguage}"
+                style="@style/txtPoppinsregular14" tools:text="@string/msg_kindly_note_tha3"/>
+            <LinearLayout android:id="@+id/linearRowframe626987"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_31pxv"
+                android:layout_marginEnd="@dimen/_38pxh"
+                android:layout_marginStart="@dimen/_39pxh"
+                android:layout_marginTop="@dimen/_30pxv"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtFrame626987"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.48"
+                    android:layout_width="0dp"
+                    android:paddingBottom="@dimen/_3pxv"
+                    android:paddingEnd="@dimen/_9pxh"
+                    android:paddingStart="@dimen/_9pxh"
+                    android:paddingTop="@dimen/_2pxv"
+                    android:singleLine="true"
+                    android:text="@{topuserVM.topuserModel.txtFrame626987}"
+                    style="@style/txtRoundedOutline_4" tools:text="@string/lbl_no_cancel"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtFrame626987One"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_52pxh"
+                    android:layout_weight="0.52"
+                    android:layout_width="0dp"
+                    android:paddingBottom="@dimen/_3pxv"
+                    android:paddingEnd="@dimen/_10pxh"
+                    android:paddingStart="@dimen/_10pxh"
+                    android:paddingTop="@dimen/_2pxv"
+                    android:singleLine="true"
+                    android:text="@{topuserVM.topuserModel.txtFrame626987One}"
+                    style="@style/txtSolidRoundedOutline_3" tools:text="@string/lbl_yes_submit"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

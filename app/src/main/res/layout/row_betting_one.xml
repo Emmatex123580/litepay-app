@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="bettingOneRowModel" type="com.litepayapp.app.modules.bettingone.data.model.BettingOneRowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearRowframe627101"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:orientation="horizontal">
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtFrame627101"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.33" android:layout_width="0dp"
+            android:paddingBottom="@dimen/_10pxv"
+            android:paddingEnd="@dimen/_13pxh"
+            android:paddingStart="@dimen/_13pxh"
+            android:paddingTop="@dimen/_9pxv" android:singleLine="true"
+            android:text="@{bettingOneRowModel.txtFrame627101}"
+            style="@style/txtSolidRounded" tools:text="@string/lbl_n100"/>
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtFrame627102"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_67pxh"
+            android:layout_weight="0.33" android:layout_width="0dp"
+            android:paddingBottom="@dimen/_10pxv"
+            android:paddingEnd="@dimen/_11pxh"
+            android:paddingStart="@dimen/_11pxh"
+            android:paddingTop="@dimen/_9pxv" android:singleLine="true"
+            android:text="@{bettingOneRowModel.txtFrame627102}"
+            style="@style/txtSolidRounded" tools:text="@string/lbl_n400"/>
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtFrame627103"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_67pxh"
+            android:layout_weight="0.33" android:layout_width="0dp"
+            android:paddingBottom="@dimen/_10pxv"
+            android:paddingEnd="@dimen/_12pxh"
+            android:paddingStart="@dimen/_12pxh"
+            android:paddingTop="@dimen/_9pxv" android:singleLine="true"
+            android:text="@{bettingOneRowModel.txtFrame627103}"
+            style="@style/txtSolidRounded" tools:text="@string/lbl_n900"/>
+    </LinearLayout>
+</layout>

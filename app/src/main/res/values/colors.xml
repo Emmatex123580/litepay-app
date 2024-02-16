@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+<color name="purple_100">#e8bff7</color>
+  <color name="purple_101">#e8bff6</color>
+  <color name="red_700">#df1f1f</color>
+  <color name="red_701">#ed1c24</color>
+  <color name="red_300">#e96666</color>
+  <color name="indigo_A200">#706eee</color>
+  <color name="bluegray_900_87">#872f2f2f</color>
+  <color name="green_600">#36b12a</color>
+  <color name="gray_600_3f1">#3f6e6d6d</color>
+  <color name="green_A700">#08de10</color>
+  <color name="bluegray_900_90">#902f2f2f</color>
+  <color name="black_900">#000000</color>
+  <color name="teal_800">#006e55</color>
+  <color name="bluegray_900_3f">#3f313131</color>
+  <color name="deep_orange_A700">#f51111</color>
+  <color name="bluegray_900_7e">#7e2f2f2f</color>
+  <color name="purple_A200">#d14fff</color>
+  <color name="purple_A100">#ce75ee</color>
+  <color name="red_A700">#f90808</color>
+  <color name="purple_500_66">#669b03d0</color>
+  <color name="bluegray_900_99">#992f2f2f</color>
+  <color name="amber_500">#f9ca0b</color>
+  <color name="bluegray_100">#d9d9d9</color>
+  <color name="gray_100">#f5f5f5</color>
+  <color name="bluegray_900">#2f2f2f</color>
+  <color name="lime_A700">#c3d507</color>
+  <color name="white_A700">#ffffff</color>
+  <color name="gray_600_3f">#3f6d6c6c</color>
+</resources>

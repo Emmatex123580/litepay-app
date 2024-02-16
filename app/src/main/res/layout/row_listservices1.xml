@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="listservices1RowModel" type="com.litepayapp.app.modules.withdrawbonussix.data.model.Listservices1RowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearRowservices"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:orientation="horizontal">
+        <TextView android:ellipsize="end" android:id="@+id/txtServices"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_11pxv"
+            android:layout_marginTop="@dimen/_9pxv"
+            android:layout_weight="0.41" android:layout_width="0dp"
+            android:singleLine="true"
+            android:text="@{listservices1RowModel.txtServices}"
+            style="@style/txtPoppinssemibold14_1" tools:text="@string/lbl_services"/>
+        <TextView android:id="@+id/txtSmartEarner"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_59pxh"
+            android:layout_weight="0.21" android:layout_width="0dp"
+            android:text="@{listservices1RowModel.txtSmartEarner}"
+            style="@style/txtPoppinsmedium14_2" tools:text="@string/lbl_smart_earner"/>
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtAffilliate"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_12pxv"
+            android:layout_marginStart="@dimen/_44pxh"
+            android:layout_marginTop="@dimen/_8pxv"
+            android:layout_weight="0.4" android:layout_width="0dp"
+            android:singleLine="true"
+            android:text="@{listservices1RowModel.txtAffilliate}"
+            style="@style/txtPoppinsmedium14_2" tools:text="@string/lbl_affilliate"/>
+        <TextView android:ellipsize="end" android:id="@+id/txtTopUser"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_9pxv"
+            android:layout_marginStart="@dimen/_44pxh"
+            android:layout_marginTop="@dimen/_11pxv"
+            android:layout_weight="0.4" android:layout_width="0dp"
+            android:singleLine="true"
+            android:text="@{listservices1RowModel.txtTopUser}"
+            style="@style/txtPoppinsmedium14_2" tools:text="@string/lbl_topuser"/>
+        <TextView android:ellipsize="end" android:id="@+id/txtAPIUser"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_11pxv"
+            android:layout_marginStart="@dimen/_44pxh"
+            android:layout_marginTop="@dimen/_9pxv"
+            android:layout_weight="0.39" android:layout_width="0dp"
+            android:singleLine="true"
+            android:text="@{listservices1RowModel.txtAPIUser}"
+            style="@style/txtPoppinsmedium14_2" tools:text="@string/lbl_api_user"/>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="withdrawBonusOneVM" type="com.litepayapp.app.modules.withdrawbonusone.data.viewmodel.WithdrawBonusOneVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearWithdrawBonus"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" android:orientation="vertical">
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearColumnconfirmtransac"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylewhite_2">
+            <LinearLayout android:id="@+id/linearRowconfirmtransac"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_18pxh"
+                android:layout_marginStart="@dimen/_18pxh"
+                android:layout_marginTop="@dimen/_29pxv"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtConfirmTransac"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.9"
+                    android:layout_width="0dp" android:singleLine="true"
+                    android:text="@{withdrawBonusOneVM.withdrawBonusOneModel.txtConfirmTransac}"
+                    style="@style/txtPoppinssemibold18" tools:text="@string/msg_confirm_transac"/>
+                <ImageView android:id="@+id/imageClose"
+                    android:layout_height="@dimen/_21pxh"
+                    android:layout_marginBottom="@dimen/_2pxv"
+                    android:layout_marginStart="@dimen/_110pxh"
+                    android:layout_marginTop="@dimen/_3pxv"
+                    android:layout_width="@dimen/_21pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_close_red_a700"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_close_red_a700"/>
+            </LinearLayout>
+            <TextView android:id="@+id/txtYouareaboutt"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_18pxh"
+                android:layout_marginStart="@dimen/_18pxh"
+                android:layout_marginTop="@dimen/_25pxv"
+                android:layout_width="match_parent"
+                android:text="@{withdrawBonusOneVM.withdrawBonusOneModel.txtYouareaboutt}"
+                style="@style/txtPoppinsregular14_2" tools:text="@string/msg_you_are_about_t2"/>
+            <ImageView android:id="@+id/imageFingerprint"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_29pxh"
+                android:layout_marginEnd="@dimen/_18pxh"
+                android:layout_marginStart="@dimen/_18pxh"
+                android:layout_marginTop="@dimen/_28pxv"
+                android:layout_width="@dimen/_26pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_fingerprint_black_900"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_fingerprint_black_900"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtUseFingerprint"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_18pxh"
+                android:layout_marginStart="@dimen/_18pxh"
+                android:layout_marginTop="@dimen/_16pxv"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{withdrawBonusOneVM.withdrawBonusOneModel.txtUseFingerprint}"
+                style="@style/txtPoppinssemibold12" tools:text="@string/lbl_use_fingerprint"/>
+            <TextView android:ellipsize="end" android:id="@+id/txtOR"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_18pxh"
+                android:layout_marginStart="@dimen/_18pxh"
+                android:layout_marginTop="@dimen/_7pxv"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{withdrawBonusOneVM.withdrawBonusOneModel.txtOR}"
+                style="@style/txtPoppinsmedium10_1" tools:text="@string/lbl_or"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtUsePINInstead"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_20pxv"
+                android:layout_marginEnd="@dimen/_18pxh"
+                android:layout_marginStart="@dimen/_18pxh"
+                android:layout_marginTop="@dimen/_7pxv"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{withdrawBonusOneVM.withdrawBonusOneModel.txtUsePINInstead}"
+                style="@style/txtPoppinssemibold12_1" tools:text="@string/lbl_use_pin_instead"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

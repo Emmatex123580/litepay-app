@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="bettingFourVM" type="com.litepayapp.app.modules.bettingfour.data.viewmodel.BettingFourVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearBettingFour"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" android:orientation="vertical">
+        <LinearLayout android:gravity="center_horizontal"
+            android:id="@+id/linearColumnclose"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_30pxh"
+            android:layout_marginStart="@dimen/_30pxh"
+            android:layout_marginTop="@dimen/_207pxv"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylewhite_4">
+            <ImageView android:id="@+id/imageClose"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_45pxh"
+                android:layout_marginEnd="@dimen/_49pxh"
+                android:layout_marginStart="@dimen/_49pxh"
+                android:layout_marginTop="@dimen/_50pxv"
+                android:layout_width="@dimen/_45pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_close_red_a700"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_close_red_a700"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtFailed"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_49pxh"
+                android:layout_marginStart="@dimen/_49pxh"
+                android:layout_marginTop="@dimen/_17pxv"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{bettingFourVM.bettingFourModel.txtFailed}"
+                style="@style/txtPoppinsbold24_2" tools:text="@string/lbl_failed"/>
+            <TextView android:gravity="center_horizontal"
+                android:id="@+id/txtLanguage"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_48pxh"
+                android:layout_marginStart="@dimen/_49pxh"
+                android:layout_marginTop="@dimen/_9pxv"
+                android:layout_width="match_parent"
+                android:text="@{bettingFourVM.bettingFourModel.txtLanguage}"
+                style="@style/txtPoppinsregular14" tools:text="@string/msg_t_tc_i_04888_be"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtConfirm"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_20pxv"
+                android:layout_marginEnd="@dimen/_49pxh"
+                android:layout_marginStart="@dimen/_49pxh"
+                android:layout_marginTop="@dimen/_33pxv"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{bettingFourVM.bettingFourModel.txtConfirm}"
+                style="@style/txtPoppinsbold16_2" tools:text="@string/lbl_confirm"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="listenterpinRowModel" type="com.litepayapp.app.modules.educationpinthree.data.model.ListenterpinRowModel"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearColumnenterpin"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:orientation="vertical">
+        <TextView android:ellipsize="end" android:id="@+id/txtEnterPIN"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_58pxh"
+            android:layout_marginStart="@dimen/_58pxh"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:text="@{listenterpinRowModel.txtEnterPIN}"
+            style="@style/txtPoppinssemibold15" tools:text="@string/lbl_enter_pin"/>
+        <LinearLayout android:id="@+id/linearRowrectangle145"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_7pxv"
+            android:layout_width="match_parent" android:orientation="horizontal">
+            <View
+                android:background="@drawable/rectangle_border_purple_500_radius_3"
+                android:id="@+id/viewRectangle145"
+                android:layout_height="@dimen/_27pxv" android:layout_width="@dimen/_31pxh"/>
+            <View
+                android:background="@drawable/rectangle_border_purple_500_radius_3"
+                android:id="@+id/viewRectangle146"
+                android:layout_height="@dimen/_27pxv"
+                android:layout_marginStart="@dimen/_20pxh" android:layout_width="@dimen/_31pxh"/>
+            <View
+                android:background="@drawable/rectangle_border_purple_500_radius_3"
+                android:id="@+id/viewRectangle147"
+                android:layout_height="@dimen/_27pxv"
+                android:layout_marginStart="@dimen/_20pxh" android:layout_width="@dimen/_31pxh"/>
+            <View
+                android:background="@drawable/rectangle_border_purple_500_radius_3"
+                android:id="@+id/viewRectangle148"
+                android:layout_height="@dimen/_27pxv"
+                android:layout_marginStart="@dimen/_20pxh" android:layout_width="@dimen/_31pxh"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

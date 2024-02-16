@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest package="com.litepayapp.app" xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <application android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name" android:largeHeap="true"
+        android:name="com.litepayapp.app.appcomponents.di.MyApp"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true" android:theme="@style/Theme.MyApp" android:usesCleartextTraffic="true">
+        <activity
+            android:name="com.litepayapp.app.modules.electricitytwo.ui.ElectricityTwoActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.litepayapp.app.modules.signupfour.ui.SignUpFourActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.litepayapp.app.modules.referalsthree.ui.ReferalsThreeActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.litepayapp.app.modules.notification.ui.NotificationActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.litepayapp.app.modules.signineight.ui.SignInEightActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.litepayapp.app.modules.homescreenone.ui.HomeScreenOneActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.litepayapp.app.modules.homescreen.ui.HomeScreenActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.litepayapp.app.modules.referalstwo.ui.ReferalsTwoActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.litepayapp.app.modules.referalssix.ui.ReferalsSixActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.litepayapp.app.modules.upgradetwo.ui.UpgradeTwoActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.litepayapp.app.modules.educationpinsix.ui.EducationPinSixActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.litepayapp.app.modules.referalseight.ui.ReferalsEightActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.litepayapp.app.modules.educationpineight.ui.EducationPinEightActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.litepayapp.app.modules.referals.ui.ReferalsActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.litepayapp.app.modules.contactuspageone.ui.ContactUsPageOneActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.litepayapp.app.modules.signuptwo.ui.SignUpTwoActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.litepayapp.app.modules.welcomescreen.ui.WelcomeScreenActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.litepayapp.app.modules.data.ui.DataActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.litepayapp.app.modules.referalsnine.ui.ReferalsNineActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.litepayapp.app.modules.metertype.ui.MeterTypeActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="true"
+            android:name="com.litepayapp.app.modules.splashscreen.ui.SplashScreenActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.litepayapp.app.modules.signintwo.ui.SignInTwoActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.litepayapp.app.modules.educationpinthree.ui.EducationPinThreeActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.litepayapp.app.modules.withdrawbonusthree.ui.WithdrawBonusThreeActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.litepayapp.app.modules.signupone.ui.SignUpOneActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.litepayapp.app.modules.notificationone.ui.NotificationOneActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.litepayapp.app.modules.signinseven.ui.SignInSevenActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.litepayapp.app.modules.upgradethree.ui.UpgradeThreeActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.litepayapp.app.modules.educationpinone.ui.EducationPinOneActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.litepayapp.app.modules.selectdiscocompany.ui.SelectDiscoCompanyActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.litepayapp.app.modules.signin.ui.SignInActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.litepayapp.app.modules.referalsfour.ui.ReferalsFourActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.litepayapp.app.modules.signinfive.ui.SignInFiveActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.litepayapp.app.modules.cablepay.ui.CablePayActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.litepayapp.app.modules.educationpin.ui.EducationPinActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.litepayapp.app.modules.educationpinseven.ui.EducationPinSevenActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.litepayapp.app.modules.airtimetwo.ui.AirtimeTwoActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.litepayapp.app.modules.betting.ui.BettingActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.litepayapp.app.modules.signupsuccess.ui.SignUpSuccessActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.litepayapp.app.modules.selectcable.ui.SelectCableActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.litepayapp.app.modules.signup.ui.SignUpActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.litepayapp.app.modules.datathree.ui.DataThreeActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.litepayapp.app.modules.referalsseven.ui.ReferalsSevenActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.litepayapp.app.modules.androidlargeeleven.ui.AndroidLargeElevenActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.litepayapp.app.modules.educationpinfour.ui.EducationPinFourActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.litepayapp.app.modules.airtime.ui.AirtimeActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.litepayapp.app.modules.withdrawbonustwo.ui.WithdrawBonusTwoActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.litepayapp.app.modules.signupthree.ui.SignUpThreeActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.litepayapp.app.modules.electricityone.ui.ElectricityOneActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.litepayapp.app.modules.homescreenthree.ui.HomeScreenThreeActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.litepayapp.app.modules.electricity.ui.ElectricityActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.litepayapp.app.modules.withdrawbonus.ui.WithdrawBonusActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.litepayapp.app.modules.datatwo.ui.DataTwoActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.litepayapp.app.modules.signinsix.ui.SignInSixActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.litepayapp.app.modules.transactiondetails.ui.TransactionDetailsActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.litepayapp.app.modules.educationpinfive.ui.EducationPinFiveActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.litepayapp.app.modules.signinfour.ui.SignInFourActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.litepayapp.app.modules.walletsummary.ui.WalletSummaryActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.litepayapp.app.modules.aboutlitepay.ui.AboutLitepayActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.litepayapp.app.modules.welcomescreentwo.ui.WelcomeScreenTwoActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.litepayapp.app.modules.educationpintwo.ui.EducationPinTwoActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.litepayapp.app.modules.successfulelectpay.ui.SuccessfulElectPayActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.litepayapp.app.modules.welcomescreenthree.ui.WelcomeScreenThreeActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.litepayapp.app.modules.referalsfive.ui.ReferalsFiveActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.litepayapp.app.modules.referalsten.ui.ReferalsTenActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.litepayapp.app.modules.withdrawbonussix.ui.WithdrawBonusSixActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.litepayapp.app.modules.withdrawbonusseven.ui.WithdrawBonusSevenActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.litepayapp.app.modules.transactionhistory.ui.TransactionHistoryActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.litepayapp.app.modules.bettingone.ui.BettingOneActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.litepayapp.app.modules.withdrawbonusfive.ui.WithdrawBonusFiveActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.litepayapp.app.modules.signinthree.ui.SignInThreeActivity" android:screenOrientation="portrait"/>
+    </application>
+</manifest>

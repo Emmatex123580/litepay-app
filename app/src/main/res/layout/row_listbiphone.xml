@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="listbiphoneRowModel" type="com.litepayapp.app.modules.walletsummary.data.model.ListbiphoneRowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearRowbiphone"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:orientation="horizontal">
+        <LinearLayout android:gravity="center_horizontal"
+            android:id="@+id/linearColumnbiphone"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_1pxv"
+            android:layout_weight="0.28" android:layout_width="0dp" android:orientation="vertical">
+            <ImageButton
+                android:background="@drawable/rectangle_bg_purple_100_border_purple_500_radius_12_25"
+                android:id="@+id/btnBiphone"
+                android:layout_gravity="start"
+                android:layout_height="@dimen/_24pxh"
+                android:layout_marginEnd="@dimen/_58pxh"
+                android:layout_marginStart="@dimen/_5pxh"
+                android:layout_width="@dimen/_24pxh"
+                android:paddingHorizontal="@dimen/_5pxh"
+                android:paddingVertical="@dimen/_5pxv"
+                android:scaleType="fitCenter"
+                android:src="@drawable/img_biphone" tools:ignore="ContentDescription"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtAirtime"
+                android:layout_gravity="start"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_53pxh"
+                android:layout_marginTop="@dimen/_2pxv"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{listbiphoneRowModel.txtAirtime}"
+                style="@style/txtPoppinsregular10" tools:text="@string/lbl_airtime"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearColumnminimize"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.24" android:layout_width="0dp" android:orientation="vertical">
+            <FrameLayout android:id="@+id/frameBiphone"
+                android:layout_height="@dimen/_24pxv"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginStart="@dimen/_1pxh"
+                android:layout_width="@dimen/_24pxh" style="@style/groupStylepurple_100cornerRadius">
+                <ImageView android:id="@+id/imageMinimize"
+                    android:layout_gravity="center"
+                    android:layout_height="@dimen/_13pxh"
+                    android:layout_marginBottom="@dimen/_5pxv"
+                    android:layout_marginEnd="@dimen/_8pxh"
+                    android:layout_marginStart="@dimen/_8pxh"
+                    android:layout_marginTop="@dimen/_5pxv"
+                    android:layout_width="@dimen/_8pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_minimize"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_minimize"/>
+                <ImageView android:id="@+id/imageVectorOne"
+                    android:layout_gravity="center"
+                    android:layout_height="@dimen/_4pxh"
+                    android:layout_marginBottom="@dimen/_10pxv"
+                    android:layout_marginEnd="@dimen/_9pxh"
+                    android:layout_marginStart="@dimen/_10pxh"
+                    android:layout_marginTop="@dimen/_9pxv"
+                    android:layout_width="@dimen/_3pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_vector_purple_500"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_vector_purple_500"/>
+            </FrameLayout>
+            <TextView android:ellipsize="end" android:id="@+id/txtData"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_3pxv"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{listbiphoneRowModel.txtData}"
+                style="@style/txtPoppinsregular10" tools:text="@string/lbl_data"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal"
+            android:id="@+id/linearColumnclose"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_1pxv"
+            android:layout_marginTop="@dimen/_1pxv"
+            android:layout_weight="0.32" android:layout_width="0dp" android:orientation="vertical">
+            <ImageButton
+                android:background="@drawable/rectangle_bg_purple_101_border_purple_500_radius_11_03"
+                android:id="@+id/btnClose"
+                android:layout_gravity="start"
+                android:layout_height="@dimen/_22pxh"
+                android:layout_marginEnd="@dimen/_12pxh"
+                android:layout_marginStart="@dimen/_12pxh"
+                android:layout_width="@dimen/_22pxh"
+                android:paddingHorizontal="@dimen/_6pxh"
+                android:paddingVertical="@dimen/_6pxv"
+                android:scaleType="fitCenter"
+                android:src="@drawable/img_close" tools:ignore="ContentDescription"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtElectricity"
+                android:layout_gravity="start"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_3pxv"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{listbiphoneRowModel.txtElectricity}"
+                style="@style/txtPoppinsregular10" tools:text="@string/lbl_electricity"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal"
+            android:id="@+id/linearColumnarrowleft"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_1pxv"
+            android:layout_marginTop="@dimen/_1pxv"
+            android:layout_weight="0.16" android:layout_width="0dp" android:orientation="vertical">
+            <ImageButton
+                android:background="@drawable/rectangle_bg_purple_101_border_purple_500_radius_11_03"
+                android:id="@+id/btnArrowleft"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_22pxh"
+                android:layout_marginEnd="@dimen/_14pxh"
+                android:layout_marginStart="@dimen/_14pxh"
+                android:layout_width="@dimen/_22pxh"
+                android:paddingHorizontal="@dimen/_6pxh"
+                android:paddingVertical="@dimen/_6pxv"
+                android:scaleType="fitCenter"
+                android:src="@drawable/img_arrowleft_purple_500" tools:ignore="ContentDescription"/>
+            <TextView android:ellipsize="end" android:gravity="start"
+                android:id="@+id/txtCableSub"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_2pxv"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{listbiphoneRowModel.txtCableSub}"
+                style="@style/txtPoppinsregular10" tools:text="@string/lbl_cable_sub"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

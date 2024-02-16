@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="welcomeScreenVM" type="com.litepayapp.app.modules.welcomescreen.data.viewmodel.WelcomeScreenVM"/>
+    </data>
+    <FrameLayout android:id="@+id/frameWelcomescreen"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" style="@style/groupStylewhite_A700">
+        <LinearLayout android:id="@+id/linearColumnunsplashymchv"
+            android:layout_gravity="start"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/_54pxv"
+            android:layout_marginTop="@dimen/_54pxv"
+            android:layout_width="match_parent" android:orientation="vertical">
+            <FrameLayout android:gravity="start"
+                android:id="@+id/frameStackefficiency"
+                android:layout_height="@dimen/_515pxv" android:layout_width="match_parent">
+                <FrameLayout android:id="@+id/frameStackrectangle127"
+                    android:layout_gravity="top|start"
+                    android:layout_height="@dimen/_415pxv"
+                    android:layout_marginBottom="@dimen/_10pxv" android:layout_width="match_parent">
+                    <FrameLayout
+                        android:id="@+id/frameStackunsplashymchv"
+                        android:layout_gravity="top|start"
+                        android:layout_height="@dimen/_262pxv"
+                        android:layout_marginBottom="@dimen/_54pxv"
+                        android:layout_marginEnd="@dimen/_33pxh"
+                        android:layout_marginStart="@dimen/_33pxh"
+                        android:layout_marginTop="@dimen/_54pxv"
+                        android:layout_width="@dimen/_262pxh" style="@style/groupStylepurple_500">
+                        <ImageView android:id="@+id/imageUnsplashymchv"
+                            android:layout_gravity="start"
+                            android:layout_height="@dimen/_262pxh"
+                            android:layout_width="match_parent"
+                            android:scaleType="fitXY"
+                            imageRes="@{@drawable/img_unsplashymchv}"
+                            tools:ignore="ContentDescription" tools:src="@drawable/img_unsplashymchv"/>
+                    </FrameLayout>
+                    <ImageView android:id="@+id/imageRectangle127"
+                        android:layout_gravity="top|center"
+                        android:layout_height="@dimen/_325pxh"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:layout_marginEnd="@dimen/_16pxh"
+                        android:layout_marginStart="@dimen/_16pxh"
+                        android:layout_marginTop="@dimen/_1pxv"
+                        android:layout_width="@dimen/_326pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_rectangle127"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle127"/>
+                    <ImageView android:id="@+id/imageUnsplashymchvOne"
+                        android:layout_gravity="top|center"
+                        android:layout_height="@dimen/_327pxh"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:layout_marginEnd="@dimen/_10pxh"
+                        android:layout_width="@dimen/_346pxh"
+                        android:scaleType="fitXY"
+                        cornerRadius="@{@dimen/_6pxh}"
+                        imageRes="@{@drawable/img_unsplashymchv_327x346}"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_unsplashymchv_327x346"/>
+                    <ImageView android:id="@+id/imageRectangle128"
+                        android:layout_gravity="bottom|start"
+                        android:layout_height="@dimen/_107pxh"
+                        android:layout_marginBottom="@dimen/_52pxv"
+                        android:layout_marginEnd="@dimen/_66pxh"
+                        android:layout_marginStart="@dimen/_66pxh"
+                        android:layout_marginTop="@dimen/_52pxv"
+                        android:layout_width="@dimen/_113pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_rectangle128"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle128"/>
+                    <ImageView android:id="@+id/imageRectangle129"
+                        android:layout_gravity="bottom|end"
+                        android:layout_height="@dimen/_218pxh"
+                        android:layout_marginStart="@dimen/_10pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_width="@dimen/_183pxh"
+                        android:scaleType="fitXY"
+                        imageRes="@{@drawable/img_rectangle129}"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle129"/>
+                </FrameLayout>
+                <LinearLayout android:id="@+id/linearColumnefficiency"
+                    android:layout_gravity="bottom|center"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_41pxh"
+                    android:layout_marginStart="@dimen/_41pxh"
+                    android:layout_marginTop="@dimen/_10pxv"
+                    android:layout_width="match_parent" android:orientation="vertical">
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtEfficiency"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_77pxh"
+                        android:layout_marginStart="@dimen/_77pxh"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        android:text="@{welcomeScreenVM.welcomeScreenModel.txtEfficiency}"
+                        style="@style/txtPoppinsbold24" tools:text="@string/lbl_efficiency"/>
+                    <TextView android:gravity="start"
+                        android:id="@+id/txtDescription"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:text="@{welcomeScreenVM.welcomeScreenModel.txtDescription}"
+                        style="@style/txtPoppinsregular14" tools:text="@string/msg_recharge_in_a_b"/>
+                </LinearLayout>
+            </FrameLayout>
+            <LinearLayout android:gravity="center_vertical"
+                android:id="@+id/linearRowrectangle130"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_21pxh"
+                android:layout_marginStart="@dimen/_21pxh"
+                android:layout_marginTop="@dimen/_38pxv"
+                android:layout_width="wrap_content" android:orientation="horizontal">
+                <View
+                    android:background="@drawable/rectangle_bg_black_900_radius_1_5"
+                    android:id="@+id/viewRectangle130"
+                    android:layout_height="@dimen/_3pxv" android:layout_width="@dimen/_24pxh"/>
+                <View
+                    android:background="@drawable/rectangle_bg_bluegray_100_radius_1_5"
+                    android:id="@+id/viewRectangle131"
+                    android:layout_height="@dimen/_3pxv"
+                    android:layout_marginStart="@dimen/_10pxh" android:layout_width="@dimen/_24pxh"/>
+                <View
+                    android:background="@drawable/rectangle_bg_bluegray_100_radius_1_5"
+                    android:id="@+id/viewRectangle132"
+                    android:layout_height="@dimen/_3pxv"
+                    android:layout_marginStart="@dimen/_10pxh" android:layout_width="@dimen/_24pxh"/>
+            </LinearLayout>
+            <LinearLayout android:id="@+id/linearRowskip"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_20pxh"
+                android:layout_marginStart="@dimen/_21pxh"
+                android:layout_marginTop="@dimen/_51pxv"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <androidx.appcompat.widget.AppCompatButton
+                    android:ellipsize="end" android:gravity="center"
+                    android:id="@+id/btnSkip"
+                    android:layout_height="@dimen/_30pxv"
+                    android:layout_width="@dimen/_62pxh"
+                    android:paddingBottom="@dimen/_6pxv"
+                    android:paddingEnd="@dimen/_18pxh"
+                    android:paddingStart="@dimen/_18pxh"
+                    android:paddingTop="@dimen/_6pxv"
+                    android:singleLine="true"
+                    android:text="@string/lbl_skip"
+                    android:textAllCaps="false"
+                    style="@style/btnRoundedOutline" tools:text="@string/lbl_skip"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:ellipsize="end" android:gravity="center"
+                    android:id="@+id/btnNext"
+                    android:layout_height="@dimen/_30pxv"
+                    android:layout_marginStart="@dimen/_195pxh"
+                    android:layout_width="@dimen/_62pxh"
+                    android:paddingBottom="@dimen/_6pxv"
+                    android:paddingEnd="@dimen/_17pxh"
+                    android:paddingStart="@dimen/_17pxh"
+                    android:paddingTop="@dimen/_6pxv"
+                    android:singleLine="true"
+                    android:text="@string/lbl_next"
+                    android:textAllCaps="false"
+                    style="@style/btnSolidRounded_1" tools:text="@string/lbl_next"/>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</layout>

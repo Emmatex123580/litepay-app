@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="listairtimeRowModel" type="com.litepayapp.app.modules.transactionhistory.data.model.ListairtimeRowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearRowairtime"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:orientation="horizontal">
+        <ImageButton
+            android:background="@drawable/rectangle_bg_purple_500_radius_12"
+            android:id="@+id/btnAirtime"
+            android:layout_height="@dimen/_24pxh"
+            android:layout_marginBottom="@dimen/_3pxv"
+            android:layout_marginTop="@dimen/_3pxv"
+            android:layout_width="@dimen/_24pxh"
+            android:paddingHorizontal="@dimen/_4pxh"
+            android:paddingVertical="@dimen/_4pxv"
+            android:scaleType="fitCenter"
+            android:src="@drawable/img_airtime_white_a700" tools:ignore="ContentDescription"/>
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearColumnairtimeOne"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_13pxh"
+            android:layout_weight="0.74" android:layout_width="0dp" android:orientation="vertical">
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtAirtimeOne"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{listairtimeRowModel.txtAirtimeOne}"
+                style="@style/txtPoppinsregular12" tools:text="@string/lbl_airtime"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtFeb121220"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_1pxv"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{listairtimeRowModel.txtFeb121220}"
+                style="@style/txtPoppinsregular8_1" tools:text="@string/msg_feb_12_12_20"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="end"
+            android:id="@+id/linearColumnn50000"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_1pxv"
+            android:layout_marginStart="@dimen/_13pxh"
+            android:layout_weight="0.18" android:layout_width="0dp" android:orientation="vertical">
+            <TextView android:ellipsize="end" android:gravity="start"
+                android:id="@+id/txtN50000"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{listairtimeRowModel.txtN50000}"
+                style="@style/txtPoppinsregular12" tools:text="@string/lbl_n500_00"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtSuccessful"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_1pxh"
+                android:layout_marginStart="@dimen/_9pxh"
+                android:layout_marginTop="@dimen/_1pxv"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{listairtimeRowModel.txtSuccessful}"
+                style="@style/txtPoppinsregular8_2" tools:text="@string/lbl_successful"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

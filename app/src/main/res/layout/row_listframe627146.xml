@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="listframe627146RowModel" type="com.litepayapp.app.modules.educationpinsix.data.model.Listframe627146RowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearRowframe627146"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:orientation="horizontal">
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtFrame627146"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25" android:layout_width="0dp"
+            android:paddingBottom="@dimen/_4pxv"
+            android:paddingEnd="@dimen/_14pxh"
+            android:paddingStart="@dimen/_13pxh"
+            android:paddingTop="@dimen/_3pxv" android:singleLine="true"
+            android:text="@{listframe627146RowModel.txtFrame627146}"
+            style="@style/txtSolidRounded_1" tools:text="@string/lbl_1"/>
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtFrame627147"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_40pxh"
+            android:layout_weight="0.25" android:layout_width="0dp"
+            android:paddingBottom="@dimen/_4pxv"
+            android:paddingEnd="@dimen/_11pxh"
+            android:paddingStart="@dimen/_11pxh"
+            android:paddingTop="@dimen/_3pxv" android:singleLine="true"
+            android:text="@{listframe627146RowModel.txtFrame627147}"
+            style="@style/txtSolidRounded_1" tools:text="@string/lbl_2"/>
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtFrame627148"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_40pxh"
+            android:layout_weight="0.25" android:layout_width="0dp"
+            android:paddingBottom="@dimen/_4pxv"
+            android:paddingEnd="@dimen/_11pxh"
+            android:paddingStart="@dimen/_11pxh"
+            android:paddingTop="@dimen/_3pxv" android:singleLine="true"
+            android:text="@{listframe627146RowModel.txtFrame627148}"
+            style="@style/txtSolidRounded_1" tools:text="@string/lbl_3"/>
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtFrame627149"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_40pxh"
+            android:layout_weight="0.25" android:layout_width="0dp"
+            android:paddingBottom="@dimen/_4pxv"
+            android:paddingEnd="@dimen/_11pxh"
+            android:paddingStart="@dimen/_11pxh"
+            android:paddingTop="@dimen/_3pxv" android:singleLine="true"
+            android:text="@{listframe627146RowModel.txtFrame627149}"
+            style="@style/txtSolidRounded_1" tools:text="@string/lbl_4"/>
+    </LinearLayout>
+</layout>

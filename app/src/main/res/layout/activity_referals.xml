@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="referalsVM" type="com.litepayapp.app.modules.referals.data.viewmodel.ReferalsVM"/>
+    </data>
+    <LinearLayout android:gravity="start"
+        android:id="@+id/linearReferals"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarToolbar"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_25pxh"
+            android:layout_marginStart="@dimen/_25pxh"
+            android:layout_marginTop="@dimen/_41pxv"
+            android:layout_width="match_parent" app:contentInsetStart="0dp">
+            <LinearLayout android:id="@+id/linearRowarrowleft"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <ImageView android:id="@+id/imageArrowleft"
+                    android:layout_height="@dimen/_14pxh"
+                    android:layout_marginBottom="@dimen/_4pxv"
+                    android:layout_marginTop="@dimen/_5pxv"
+                    android:layout_width="@dimen/_14pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_arrowleft_bluegray_900_14x14"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_arrowleft_bluegray_900_14x14"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtReferals"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_107pxh"
+                    android:layout_weight="0.82"
+                    android:layout_width="0dp" android:singleLine="true"
+                    android:text="@{referalsVM.referalsModel.txtReferals}"
+                    style="@style/txtPoppinsmedium16" tools:text="@string/lbl_referals"/>
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtLitePayReferal"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_20pxh"
+            android:layout_marginStart="@dimen/_20pxh"
+            android:layout_marginTop="@dimen/_25pxv"
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:text="@{referalsVM.referalsModel.txtLitePayReferal}"
+            style="@style/txtPoppinsmedium20" tools:text="@string/msg_litepay_referal"/>
+        <TextView android:gravity="center_horizontal"
+            android:id="@+id/txtDescription"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_14pxh"
+            android:layout_marginStart="@dimen/_20pxh"
+            android:layout_marginTop="@dimen/_18pxv"
+            android:layout_width="match_parent"
+            android:text="@{referalsVM.referalsModel.txtDescription}"
+            style="@style/txtPoppinsregular16" tools:text="@string/msg_refer_people_to"/>
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtHttpswwwLite"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_20pxh"
+            android:layout_marginStart="@dimen/_20pxh"
+            android:layout_marginTop="@dimen/_25pxv"
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:text="@{referalsVM.referalsModel.txtHttpswwwLite}"
+            style="@style/txtPoppinsregular16_4" tools:text="@string/msg_https_www_lite"/>
+        <TextView android:ellipsize="end" android:id="@+id/txtLanguage"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_20pxh"
+            android:layout_marginStart="@dimen/_20pxh"
+            android:layout_marginTop="@dimen/_111pxv"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:text="@{referalsVM.referalsModel.txtLanguage}"
+            style="@style/txtPoppinsmedium18_1" tools:text="@string/lbl_referals2"/>
+        <TextView android:id="@+id/txtYouhavenotre"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_20pxh"
+            android:layout_marginStart="@dimen/_20pxh"
+            android:layout_marginTop="@dimen/_17pxv"
+            android:layout_width="match_parent"
+            android:text="@{referalsVM.referalsModel.txtYouhavenotre}"
+            style="@style/txtPoppinsregular16" tools:text="@string/msg_you_have_not_re"/>
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearRowhome"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_180pxv"
+            android:layout_width="match_parent"
+            android:orientation="horizontal" style="@style/groupStylewhite_1">
+            <LinearLayout android:gravity="center_horizontal"
+                android:id="@+id/linearColumnhome"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_11pxv"
+                android:layout_marginStart="@dimen/_20pxh"
+                android:layout_marginTop="@dimen/_14pxv"
+                android:layout_weight="0.28" android:layout_width="0dp" android:orientation="vertical">
+                <ImageView android:id="@+id/imageHome"
+                    android:layout_gravity="start"
+                    android:layout_height="@dimen/_10pxh"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_marginStart="@dimen/_10pxh"
+                    android:layout_width="@dimen/_9pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_home_bluegray_900"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_home_bluegray_900"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtHomeOne"
+                    android:layout_gravity="start"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_marginTop="@dimen/_6pxv"
+                    android:layout_width="wrap_content"
+                    android:singleLine="true"
+                    android:text="@{referalsVM.referalsModel.txtHomeOne}"
+                    style="@style/txtPoppinsregular10" tools:text="@string/lbl_home"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal"
+                android:id="@+id/linearColumnsort"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_10pxv"
+                android:layout_marginTop="@dimen/_14pxv"
+                android:layout_weight="0.29" android:layout_width="0dp" android:orientation="vertical">
+                <ImageView android:id="@+id/imageSort"
+                    android:layout_gravity="start"
+                    android:layout_height="@dimen/_14pxh"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_marginStart="@dimen/_10pxh"
+                    android:layout_width="@dimen/_14pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_sort"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_sort"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtPricing"
+                    android:layout_gravity="start"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_marginTop="@dimen/_5pxv"
+                    android:layout_width="wrap_content"
+                    android:singleLine="true"
+                    android:text="@{referalsVM.referalsModel.txtPricing}"
+                    style="@style/txtPoppinsregular10" tools:text="@string/lbl_pricing"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal"
+                android:id="@+id/linearColumnmaximize"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_12pxv"
+                android:layout_marginTop="@dimen/_13pxv"
+                android:layout_weight="0.33" android:layout_width="0dp" android:orientation="vertical">
+                <ImageView android:id="@+id/imageMaximize"
+                    android:layout_gravity="start"
+                    android:layout_height="@dimen/_12pxh"
+                    android:layout_marginEnd="@dimen/_15pxh"
+                    android:layout_marginStart="@dimen/_15pxh"
+                    android:layout_width="@dimen/_13pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_maximize_purple_500"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_maximize_purple_500"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtReferrals"
+                    android:layout_gravity="start"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_marginTop="@dimen/_5pxv"
+                    android:layout_width="wrap_content"
+                    android:singleLine="true"
+                    android:text="@{referalsVM.referalsModel.txtReferrals}"
+                    style="@style/txtPoppinsregular10_1" tools:text="@string/lbl_referrals"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal"
+                android:id="@+id/linearColumnlock"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_12pxv"
+                android:layout_marginEnd="@dimen/_20pxh"
+                android:layout_marginTop="@dimen/_13pxv"
+                android:layout_weight="0.1" android:layout_width="0dp" android:orientation="vertical">
+                <ImageView android:id="@+id/imageLock"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="@dimen/_13pxh"
+                    android:layout_marginEnd="@dimen/_8pxh"
+                    android:layout_marginStart="@dimen/_8pxh"
+                    android:layout_width="@dimen/_13pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_lock"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_lock"/>
+                <TextView android:ellipsize="end"
+                    android:gravity="start" android:id="@+id/txtProfile"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5pxv"
+                    android:layout_width="match_parent"
+                    android:singleLine="true"
+                    android:text="@{referalsVM.referalsModel.txtProfile}"
+                    style="@style/txtPoppinsregular10" tools:text="@string/lbl_profile"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

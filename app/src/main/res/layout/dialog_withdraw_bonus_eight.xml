@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="withdrawBonusEightVM" type="com.litepayapp.app.modules.withdrawbonuseight.data.viewmodel.WithdrawBonusEightVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearWithdrawBonus"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" android:orientation="vertical">
+        <LinearLayout android:gravity="center_horizontal"
+            android:id="@+id/linearColumncheckmark"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_30pxh"
+            android:layout_marginStart="@dimen/_30pxh"
+            android:layout_marginTop="@dimen/_232pxv"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylewhite_4">
+            <ImageView android:id="@+id/imageCheckmark"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_39pxh"
+                android:layout_marginEnd="@dimen/_78pxh"
+                android:layout_marginStart="@dimen/_78pxh"
+                android:layout_marginTop="@dimen/_40pxv"
+                android:layout_width="@dimen/_57pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_checkmark_green_a700"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_checkmark_green_a700"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtSuccess"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_78pxh"
+                android:layout_marginStart="@dimen/_78pxh"
+                android:layout_marginTop="@dimen/_22pxv"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{withdrawBonusEightVM.withdrawBonusEightModel.txtSuccess}"
+                style="@style/txtPoppinsbold24_2" tools:text="@string/lbl_success"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtLanguage"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_77pxh"
+                android:layout_marginStart="@dimen/_78pxh"
+                android:layout_marginTop="@dimen/_7pxv"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{withdrawBonusEightVM.withdrawBonusEightModel.txtLanguage}"
+                style="@style/txtPoppinsregular14" tools:text="@string/msg_transaction_su"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:ellipsize="end" android:gravity="center"
+                android:id="@+id/btnOk"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_16pxv"
+                android:layout_marginEnd="@dimen/_78pxh"
+                android:layout_marginStart="@dimen/_78pxh"
+                android:layout_marginTop="@dimen/_20pxv"
+                android:layout_width="match_parent"
+                android:paddingBottom="@dimen/_3pxv"
+                android:paddingEnd="@dimen/_30pxh"
+                android:paddingStart="@dimen/_30pxh"
+                android:paddingTop="@dimen/_3pxv"
+                android:singleLine="true" android:text="@string/lbl_ok"
+                android:textAllCaps="false"
+                style="@style/btnSolidRoundedOutline_3" tools:text="@string/lbl_ok"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

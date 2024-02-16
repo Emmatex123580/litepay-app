@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="bettingFiveVM" type="com.litepayapp.app.modules.bettingfive.data.viewmodel.BettingFiveVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearBettingFive"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" android:orientation="vertical">
+        <LinearLayout android:gravity="center_horizontal"
+            android:id="@+id/linearColumncheckmark"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_30pxh"
+            android:layout_marginStart="@dimen/_30pxh"
+            android:layout_marginTop="@dimen/_207pxv"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylewhite_4">
+            <ImageView android:id="@+id/imageCheckmark"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_39pxh"
+                android:layout_marginEnd="@dimen/_53pxh"
+                android:layout_marginStart="@dimen/_53pxh"
+                android:layout_marginTop="@dimen/_52pxv"
+                android:layout_width="@dimen/_57pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_checkmark_green_a700"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_checkmark_green_a700"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtSuccess"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_53pxh"
+                android:layout_marginStart="@dimen/_53pxh"
+                android:layout_marginTop="@dimen/_22pxv"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{bettingFiveVM.bettingFiveModel.txtSuccess}"
+                style="@style/txtPoppinsbold24_2" tools:text="@string/lbl_success"/>
+            <TextView android:ellipsize="end"
+                android:gravity="center_horizontal"
+                android:id="@+id/txtBettingsuccess"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_52pxh"
+                android:layout_marginStart="@dimen/_53pxh"
+                android:layout_marginTop="@dimen/_9pxv"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{bettingFiveVM.bettingFiveModel.txtBettingsuccess}"
+                style="@style/txtPoppinsregular14" tools:text="@string/msg_betting_success"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtConfirm"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_20pxv"
+                android:layout_marginEnd="@dimen/_53pxh"
+                android:layout_marginStart="@dimen/_53pxh"
+                android:layout_marginTop="@dimen/_42pxv"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{bettingFiveVM.bettingFiveModel.txtConfirm}"
+                style="@style/txtPoppinsbold16_2" tools:text="@string/lbl_confirm"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>
